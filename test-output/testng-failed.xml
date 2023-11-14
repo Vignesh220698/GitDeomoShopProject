@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="url" value="https://www.demoblaze.com/"/>
+  <listeners>
+    <listener class-name="utility1.Listernerclass"/>
+  </listeners>
+  <test thread-count="5" name="LoginTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="test1.TC0002_LoginTest">
+        <methods>
+          <include name="setdata"/>
+          <include name="Login" invocation-numbers="0"/>
+          <include name="browserclose"/>
+          <include name="browserlaunch"/>
+        </methods>
+      </class> <!-- test1.TC0002_LoginTest -->
+    </classes>
+  </test> <!-- LoginTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
