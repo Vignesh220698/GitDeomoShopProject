@@ -16,6 +16,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Utilityclass1 {
 	
@@ -33,6 +34,8 @@ public class Utilityclass1 {
 			driver=new ChromeDriver(option);
 		}else if(browser.equalsIgnoreCase("edge")) {
 			driver=new EdgeDriver();
+		}else if(browser.equalsIgnoreCase("Firefox")) {
+			driver= new FirefoxDriver();
 		}
 
 		driver.manage().window().maximize();

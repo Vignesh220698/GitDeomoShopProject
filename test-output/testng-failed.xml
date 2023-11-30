@@ -11,7 +11,7 @@
       <class name="test1.TC0002_LoginTest">
         <methods>
           <include name="setdata"/>
-          <include name="Login" invocation-numbers="0"/>
+          <include name="Login" invocation-numbers="0 1"/>
           <include name="browserclose"/>
           <include name="browserlaunch"/>
         </methods>

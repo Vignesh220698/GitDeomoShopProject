@@ -38,7 +38,8 @@ public class SignUpPage1 extends ProjectDemoBase{
 		 return this;
 	 }
 	
-	 public void signupbutton1() {
+	 public void signupbutton1() throws InterruptedException {
+		 Thread.sleep(3000);
 		 click(signupbutton1);
 	 }
 	

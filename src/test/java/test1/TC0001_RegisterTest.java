@@ -15,7 +15,7 @@ public class TC0001_RegisterTest extends ProjectDemoBase{
 
 
 @Test(priority = 1,dataProvider = "getdata")
-public void Register(String name, String password) {
+public void Register(String name, String password) throws InterruptedException {
 	
 	new Homepage1(driver)
 	.signupbutton()

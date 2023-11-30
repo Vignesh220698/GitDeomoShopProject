@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test1.TC0002_LoginTest" class="method navigator-link" hash-for-method="Login(Vignesh1233345445647838843245@gmail.com, Vignesh@123)">Login(Vignesh1233345445647838843245@gmail.com, Vignesh@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test1.TC0002_LoginTest" class="method navigator-link" hash-for-method="Login(Vignesh2333536363455@gmail.com, Vignesh@123)">Login(Vignesh2333536363455@gmail.com, Vignesh@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,12 +122,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test1.TC0002_LoginTest" class="method navigator-link" hash-for-method="Login(Vignesh12344455555@gmail.com, Vignesh@123)">Login(Vignesh12344455555@gmail.com, Vignesh@123)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="test1.TC0001_RegisterTest" class="method navigator-link" hash-for-method="Register(Vignesh1233345445647838843245@gmail.com, Vignesh@123)">Register(Vignesh1233345445647838843245@gmail.com, Vignesh@123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test1.TC0001_RegisterTest" class="method navigator-link" hash-for-method="Register(Vignesh123444433567845@gmail.com, Vignesh@123)">Register(Vignesh123444433567845@gmail.com, Vignesh@123)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="test1.TC0001_RegisterTest" class="method navigator-link" hash-for-method="Register(Vignesh2333536363455@gmail.com, Vignesh@123)">Register(Vignesh2333536363455@gmail.com, Vignesh@123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -123,6 +142,72 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test1.TC0002_LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login(Vignesh1233345445647838843245@gmail.com, Vignesh@123)">
+                  </a> <!-- Login(Vignesh1233345445647838843245@gmail.com, Vignesh@123) -->
+                  <span class="method-name">Login</span>
+                  <span class="parameters">(Vignesh1233345445647838843245@gmail.com,Vignesh@123)</span>
+                  <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User does not exist.}
+  (Session info: chrome=119.0.6045.124): User does not exist.
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9b426ace08412d0f3b80c4936a2dd919, getPageSource {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\VIJAYA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55126}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55126/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9b426ace08412d0f3b80c4936a2dd919
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:679)
+	at org.openqa.selenium.remote.RemoteWebDriver.getPageSource(RemoteWebDriver.java:385)
+	at test1.TC0002_LoginTest.Login(TC0002_LoginTest.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login(Vignesh2333536363455@gmail.com, Vignesh@123)">
+                  </a> <!-- Login(Vignesh2333536363455@gmail.com, Vignesh@123) -->
+                  <span class="method-name">Login</span>
+                  <span class="parameters">(Vignesh2333536363455@gmail.com,Vignesh@123)</span>
+                  <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User does not exist.}
+  (Session info: chrome=119.0.6045.124): User does not exist.
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e19100781cb47b8822584d5bd42bedb5, getPageSource {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\VIJAYA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55151}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55151/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e19100781cb47b8822584d5bd42bedb5
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:679)
+	at org.openqa.selenium.remote.RemoteWebDriver.getPageSource(RemoteWebDriver.java:385)
+	at test1.TC0002_LoginTest.Login(TC0002_LoginTest.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -131,26 +216,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Register(Vignesh123444433567845@gmail.com, Vignesh@123)">
-                  </a> <!-- Register(Vignesh123444433567845@gmail.com, Vignesh@123) -->
+                  <a name="Register(Vignesh1233345445647838843245@gmail.com, Vignesh@123)">
+                  </a> <!-- Register(Vignesh1233345445647838843245@gmail.com, Vignesh@123) -->
                   <span class="method-name">Register</span>
-                  <span class="parameters">(Vignesh123444433567845@gmail.com,Vignesh@123)</span>
+                  <span class="parameters">(Vignesh1233345445647838843245@gmail.com,Vignesh@123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">test1.TC0002_LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Login(Vignesh12344455555@gmail.com, Vignesh@123)">
-                  </a> <!-- Login(Vignesh12344455555@gmail.com, Vignesh@123) -->
-                  <span class="method-name">Login</span>
-                  <span class="parameters">(Vignesh12344455555@gmail.com,Vignesh@123)</span>
+                  <a name="Register(Vignesh2333536363455@gmail.com, Vignesh@123)">
+                  </a> <!-- Register(Vignesh2333536363455@gmail.com, Vignesh@123) -->
+                  <span class="method-name">Register</span>
+                  <span class="parameters">(Vignesh2333536363455@gmail.com,Vignesh@123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -169,12 +246,12 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;utility1.Listernerclass&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;loginTest&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;SignUpTest&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;test1.TC0001_RegisterTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- loginTest --&gt;
+  &lt;/test&gt; &lt;!-- SignUpTest --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;LoginTest&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
@@ -192,7 +269,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">loginTest (1 class)</span>
+                <span class="test-name">SignUpTest (1 class)</span>
               </li>
               <li>
                 <span class="test-name">LoginTest (1 class)</span>
@@ -221,20 +298,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Login')
 data.setCell(0, 2, 'test1.TC0002_LoginTest')
-data.setCell(0, 3, 5389);
+data.setCell(0, 3, 7404);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Register')
-data.setCell(1, 2, 'test1.TC0001_RegisterTest')
-data.setCell(1, 3, 940);
+data.setCell(1, 1, 'Login')
+data.setCell(1, 2, 'test1.TC0002_LoginTest')
+data.setCell(1, 3, 5272);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Register')
+data.setCell(2, 2, 'test1.TC0001_RegisterTest')
+data.setCell(2, 3, 949);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Register')
+data.setCell(3, 2, 'test1.TC0001_RegisterTest')
+data.setCell(3, 3, 716);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -267,34 +352,64 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">browserlaunch(https://www.demoblaze.com/, chrome)</span>
-                <span class="method-start">1660 ms</span>
+                <span class="method-start">1926 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">Register(Vignesh123444433567845@gmail.com, Vignesh@123)</span>
-                <span class="method-start">7439 ms</span>
+                <span class="method-name">Register(Vignesh1233345445647838843245@gmail.com, Vignesh@123)</span>
+                <span class="method-start">12070 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">browserclose</span>
-                <span class="method-start">8954 ms</span>
+                <span class="method-start">13474 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserlaunch(https://www.demoblaze.com/, chrome)</span>
+                <span class="method-start">13637 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Register(Vignesh2333536363455@gmail.com, Vignesh@123)</span>
+                <span class="method-start">18729 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">browserclose</span>
+                <span class="method-start">20145 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test1.TC0002_LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setdata</span>
-                <span class="method-start">9756 ms</span>
+                <span class="method-start">21124 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">browserlaunch(https://www.demoblaze.com/, chrome)</span>
-                <span class="method-start">9841 ms</span>
+                <span class="method-start">21247 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">Login(Vignesh12344455555@gmail.com, Vignesh@123)</span>
-                <span class="method-start">14001 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Login(Vignesh1233345445647838843245@gmail.com, Vignesh@123)</span>
+                <span class="method-start">28375 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">browserclose</span>
-                <span class="method-start">19859 ms</span>
+                <span class="method-start">36267 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserlaunch(https://www.demoblaze.com/, chrome)</span>
+                <span class="method-start">36531 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Login(Vignesh2333536363455@gmail.com, Vignesh@123)</span>
+                <span class="method-start">41493 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserclose</span>
+                <span class="method-start">47173 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
