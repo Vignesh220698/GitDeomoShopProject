@@ -35,7 +35,8 @@ public class LoginPage1 extends ProjectDemoBase{
 		return this;
 	}
 	
-	public void loginbutton1() {
+	public void loginbutton1() throws InterruptedException {
+		Thread.sleep(2000);
 		click(loginbutton);
 	}
 	
